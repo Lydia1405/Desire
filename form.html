@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            background-color: #9db0e6;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(149, 25, 25, 0.1);
+            width: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <h1 align="center">Form</h1>
+    <form>
+        <label for="fname">FIRST NAME:</label><br>
+        <input type="text" required><br>
+        <label for="lastname">LASTNAME</label><br>
+        <input type="text" required><br>
+        <label for="age" required>AGE:-</label><br>
+        <input type="number"><br>
+        <label for="date">DOB:-</label><br>
+        <input type="date"><br>
+        <label for="gender">GENDER:-</label><br>
+        <input type="radio" value="gender">
+        <label for="male">Male</label><br>
+        <input type="radio" value="gender">
+        <label for="female">Female</label><br>
+        <input type="radio" value="gender">
+        <label for="others">Others</label><br>
+        <label for="city">CITY:-</label><br>
+        <select required>
+        <option value="chennai">Chennai</option>
+        <option value="covai">Coimbatore</option>
+        <option value="ia">Madurai</option>
+        <option value="dia">Tirunelveli</option>
+        <option value="F">Salem</option>
+        <option value="dia">Trichy</option>
+        </select><br>
+        <label for="address">ADDRESS:-</label><br>
+        <textarea rows="4"cols=19" placeholder="text your address here"></textarea><br>
+        <input type="submit">
+    </form>
+    </div>
+</body>
+</html>
