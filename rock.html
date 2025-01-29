@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <divclass="container">
+        <h1>Rock paper scissor</h1>
+        <p>Choose your choice</p>
+        <button class="btn" onclick="play(Rock)">🪨stone</button>
+        <button class="btn" onclick="play(Paper)">📃Paper</button>
+        <button class="btn" onclick="play(Scissor)">Scissor</button>
+        <p id="result">result</p>
+        <script>
+            const arr=["Rock","Paper","Scissor"]
+            const computerChoice=arr[Math.floor(Math.random*arr.length)]
+            function play(userChoice){
+                let result=((computerChoice=="Rock" && userChoice==="Paper" )||(computerChoice=="Paper" && userChoice==="Scissor" )
+                ||(computerChoice=="Scissor" && userChoice==="Rock" ))? "You won" : "You lose computer won"
+            }
+        </script>
+    </divclass>
+</body>
+</html>

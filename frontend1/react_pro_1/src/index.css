@@ -1,0 +1,116 @@
+/* index.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: #333;
+  line-height: 1.6;
+  overflow: hidden;
+  position: relative;
+}
+
+.App-header {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.App-header h1 {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 60px 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.about, .skills, .projects, .contact {
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 60px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px 10px;
+  background: #333;
+  color: white;
+  border-radius: 4px;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: white;
+}
+
+.App-footer {
+  text-align: center;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .section {
+      padding: 80px 40px;
+  }
+
+  .skills ul li {
+      margin: 0 15px;
+  }
+}
+
